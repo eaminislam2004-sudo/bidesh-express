@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bidesh Express — Your Gateway to International Education</title>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta property="og:title" content="Bidesh Express — Your Gateway to International Education">
+<meta property="og:image" content="/assets/logo.png">
+<meta name="description" content="Study in Malaysia with Bidesh Express: university matching, scholarships and visa guidance for Bangladeshi students.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Jost:wght@400;500;600;700&family=Caveat:wght@700&family=Manrope:wght@600;800&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css"></head><body>
+
+<nav><div class="wrap">
+<a href="#top"><img class="brand" alt="Bidesh Express" src="/assets/logo.png"></a>
+<ul id="menu">
+<li><a href="#study">Study in Malaysia</a></li><li><a href="#finder">Universities</a></li><li><a href="#courses">Courses</a></li><li><a href="#scholar">Scholarships</a></li><li><a href="#services">Services</a></li><li><a href="#tools">Support</a></li><li><a href="#why">About</a></li><li><a href="#contact">Contact</a></li>
+</ul>
+<a class="btn pri cta-nav" href="#mf">Find My University</a>
+<button id="burger" aria-label="Open menu" aria-expanded="false">☰</button>
+</div></nav>
+
+<main id="top">
+<header class="hero"><div class="wrap hc"><span class="chip2">● MALAYSIA UNIVERSITY MATCH FINDER</span>
+<h1>From Bangladesh<br>to your <span>dream</span><br><i>Malaysian</i> university.</h1>
+<p>Tell us what you want to study and your budget. We shortlist realistic Malaysian options, help with applications, and guide you through scholarships, EMGS and Student Pass steps.</p>
+<form class="uf2" id="mf" novalidate>
+<label class="row"><span>Select Your Study Level</span><select id="fl"></select></label>
+<label class="row"><span>Select Your Subject / Course</span><input id="fs" list="sl" autocomplete="off" placeholder="Type or choose a subject"><datalist id="sl"></datalist></label>
+<label class="row"><span>Select Your Annual Budget</span><select id="fb"></select></label>
+<label class="row"><span>Select University Preference</span><select id="ft"></select></label>
+<details class="row loc"><summary><span>Select Preferred Location</span><b id="ls">Any Location in Malaysia</b></summary><div id="lc"></div></details>
+<label class="row"><span>Select Scholarship Preference</span><select id="fh"></select></label>
+<button class="go" type="submit">Find My Matches →</button>
+<details class="more2"><summary>More filters (optional): English, intake, qualification</summary>
+<div class="frow">
+<label><span>English language</span><select id="fe"></select></label>
+<label><span>Preferred intake</span><select id="fi"></select></label></div>
+<div id="qw"><div class="frow">
+<label><span>Academic qualification</span><select id="fq"></select></label>
+<label><span>Previous result / GPA</span><input id="fp"></label>
+<label><span>Study background</span><input id="fg" placeholder="e.g. Science, Commerce, Arts"></label>
+<label><span>Graduation year</span><select id="fy"></select></label></div>
+<p class="fnote2">Optional. These details stay on your device and are shared only if you message us on WhatsApp. They do not guarantee admission: universities set the final requirements.</p></div></details>
+<p class="fnote2 fxn" id="fx">BDT amounts are estimates only. Confirm final fees with the university.</p>
+</form>
+</div></header>
+
+<section id="finder" class="fsec"><div class="wrap">
+<div id="rtool" class="rtool" hidden><input id="rq" type="search" placeholder="Search by university or course name" aria-label="Search results"><select id="rsort" aria-label="Sort results"><option value="best">Sort: Best match</option><option value="fee">Sort: Lowest tuition fee</option><option value="rank">Sort: Highest ranking</option></select><button class="btn out sm" id="rsaved" type="button" data-on="0">Saved (0)</button></div>
+<div id="res" aria-live="polite"><div class="sample" style="margin-top:20px"><b>Sample data.</b> Course fees, durations and intakes are placeholders for demonstration, not official. Scholarships, English requirements, entry requirements, accommodation and rankings read “to be confirmed” until verified. Never rely on them for a decision.</div></div>
+<details class="adm"><summary>Admin: edit university and course data (demo)</summary>
+<p class="fnote2">This demo panel saves to this browser only. The full records live in <code>data.js</code>, and the full build moves them to a database with staff logins.</p>
+<form id="af" class="frow adf"><label><span>University</span><select id="au"></select></label><label><span>Level</span><select id="al2"></select></label><label><span>Subject</span><select id="as"></select></label><label><span>Course name</span><input id="ac" required></label>
+<label><span>Fee (RM, original)</span><input id="am" type="number" min="0" required></label><label><span>Fee period</span><select id="ap"><option>Semester</option><option selected>Year</option><option>Program</option></select></label><label><span>Duration (years)</span><input id="ad" type="number" min="0.5" step="0.5" value="3" required></label><label><span>Intakes (comma separated)</span><input id="ai" placeholder="January, May"></label>
+<button class="btn pri" type="submit">Add course</button></form><div id="al"></div></details>
+</div></section>
+<div id="tray" class="tray" hidden><span id="tn"></span><button class="btn pri sm" id="tv" type="button">Compare</button><button class="btn out sm" id="tc" type="button">Clear</button></div>
+<dialog id="cmpd" aria-label="Compare universities"><button id="cmpx" class="btn out sm" type="button" style="float:right">Close</button><h3>Compare universities</h3><div id="cmpbody" style="overflow-x:auto"></div></dialog>
+
+<section id="founder"><div class="wrap fd">
+<div class="fi"><span class="chip2">MEET OUR FOUNDER</span>
+<p class="hello">Hello, I’m</p>
+<h2 class="fname" data-f="name">EAMIEN ISLAM</h2>
+<p class="role"><b data-f="title">CEO &amp; FOUNDER</b><br><span data-f="company">BIDESH EXPRESS</span></p>
+<p class="ftag" data-f="tagline">YOUR GATEWAY TO INTERNATIONAL EDUCATION</p>
+<p class="fintro" data-f="intro">Leading Bidesh Express with a vision to make international education more accessible.</p>
+<a class="btn pri" href="#contact">EXPLORE MY JOURNEY →</a></div>
+<div class="pt"><div class="big" aria-hidden="true" data-f="first">EAMIEN</div><img src="/assets/founder.webp" width="719" height="860" alt="Eamien Islam, CEO and Founder of Bidesh Express" loading="lazy" decoding="async"></div>
+<div class="fcards" id="fc"></div>
+</div></section>
+
+<section id="study" style="background:#F7FAFF"><div class="wrap">
+<div><h2>Why Malaysia?</h2><p class="lead" style="margin-bottom:0">Many students choose Malaysia for English-taught programs, lower living costs than the UK or Australia, and a multicultural environment. Costs and rules change, so we confirm current figures with you before you commit.</p></div>
+</div></section>
+
+<section id="courses"><div class="wrap"><h2>Popular Courses</h2><p class="lead">Sixteen categories, from IT to Law. Full searchable directory is the next build phase.</p>
+<div id="cc"></div></div></section>
+
+<section id="scholar" style="background:#F7FAFF"><div class="wrap"><h2>Scholarships</h2>
+<p class="lead">Merit, academic, international-student and tuition-discount options vary by university and intake. When verified, award values will be shown in BDT estimates, with the original RM amount kept on record. We will list only verified awards with eligibility, deadlines and how to apply.</p>
+<a class="btn out" href="#contact">Ask about scholarships</a></div></section>
+
+<section id="services"><div class="wrap"><h2>Our Services</h2><p class="lead">Support from your first question to your first day on campus.</p>
+<div class="grid" id="sv"></div></div></section>
+
+<section id="why" style="background:#EAF2FF"><div class="wrap"><h2>Why Choose Bidesh Express?</h2>
+<p class="lead">We are a Bangladeshi-focused education service. We do not promise admissions or visas. We explain the process, check your documents and keep you informed. Success stories and partnerships will be added only when verified.</p></div></section>
+
+<section id="road"><div class="wrap two"><div><h2>Application Roadmap</h2><p class="lead">Tap a step to see what happens.</p></div><ol class="road" id="rd"></ol></div></section>
+
+<section id="tools" style="background:#F7FAFF"><div class="wrap"><h2>Student Support &amp; Tools</h2>
+<p class="lead">Jobs, accommodation, car rental, community and calculators come in the next phase. Student-pass work rules limit working hours, so we will always explain them next to every job listing.</p></div></section>
+
+<section id="contact"><div class="wrap two">
+<div><h2>Book a free consultation</h2><p class="lead">Send your details and we open WhatsApp with your message ready.</p>
+<p>Email: <a href="mailto:bideshexpress.edu@gmail.com">bideshexpress.edu@gmail.com</a><br>WhatsApp: <a href="https://wa.me/601135275727">+60 11 3527 5727</a></p></div>
+<form class="f" id="cf" style="grid-template-columns:1fr" novalidate>
+<label>Name<input name="n" required autocomplete="name" aria-describedby="cerr"></label><label>WhatsApp Number<input name="w" type="tel" inputmode="tel" required autocomplete="tel" placeholder="+8801XXXXXXXXX" aria-describedby="cerr"></label>
+<label>Preferred University or Course<input name="u" required aria-describedby="cerr"></label>
+<label>Message<textarea name="m" rows="3"></textarea></label>
+<p id="cerr" class="cerr" role="alert" hidden></p>
+<button class="btn pri" type="submit">Send on WhatsApp</button></form>
+</div></section>
+</main>
+
+<footer><div class="wrap"><div class="fl">
+<div><img src="/assets/logo.png" alt="Bidesh Express" style="width:150px"><p>Your gateway to international education. Student services for Bangladeshi students.</p></div>
+<div><h4>Explore</h4><a href="#finder">Universities</a><a href="#courses">Courses</a><a href="#scholar">Scholarships</a><a href="#services">Services</a></div>
+<div><h4>Contact</h4><a href="mailto:bideshexpress.edu@gmail.com">bideshexpress.edu@gmail.com</a><a href="https://wa.me/601135275727">+60 11 3527 5727</a></div>
+<div><h4>Legal</h4><a href="#top">Privacy Policy</a><a href="#top">Terms of Service</a><a href="#top">Cookie Policy</a></div>
+</div></div></footer>
+<a id="wa" href="https://wa.me/601135275727" target="_blank" rel="noopener">WhatsApp us</a>
+
+<script src="/data.js" defer></script>
+<script src="/script.js" defer></script></body></html>

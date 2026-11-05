@@ -1,0 +1,7 @@
+{
+  "name": "bidesh-express",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Bidesh Express: study in Malaysia, university finder (static site)",
+  "scripts": { "dev": "npx serve ." }
+}
